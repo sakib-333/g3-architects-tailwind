@@ -9,3 +9,21 @@
     font-family: "Work Sans", sans-serif;
   }
 }
+
+@layer components {
+  .btn {
+    @apply text-xs sm:text-sm md:text-base bg-orange-400 px-4 py-2 text-white rounded-md;
+  }
+  .badge {
+    @apply p-4 shadow-sm shadow-gray-400 rounded-lg;
+  }
+  .achievment {
+    @apply mt-4 sm:mt-8 md:mt-12 w-40 h-40 flex flex-col items-center justify-center border-2 border-yellow-400 rounded-md;
+  }
+  .bottom-negative-50 {
+    bottom: -50px;
+  }
+  .left-negative-40 {
+    left: -40px;
+  }
+}
