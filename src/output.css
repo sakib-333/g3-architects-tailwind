@@ -691,8 +691,16 @@ body {
   margin-top: 4rem;
 }
 
+.mt-24{
+  margin-top: 6rem;
+}
+
 .mt-4{
   margin-top: 1rem;
+}
+
+.mt-40{
+  margin-top: 10rem;
 }
 
 .mt-8{
@@ -751,6 +759,12 @@ body {
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-y-8 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
 
 .rounded-md{
@@ -845,6 +859,11 @@ body {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.grayscale{
+  --tw-grayscale: grayscale(100%);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 .hover\:text-orange-400:hover{
   --tw-text-opacity: 1;
   color: rgb(251 146 60 / var(--tw-text-opacity));
@@ -918,6 +937,14 @@ body {
 
   .md\:w-2\/5{
     width: 40%;
+  }
+
+  .md\:flex-row{
+    flex-direction: row;
+  }
+
+  .md\:justify-between{
+    justify-content: space-between;
   }
 
   .md\:space-x-4 > :not([hidden]) ~ :not([hidden]){
